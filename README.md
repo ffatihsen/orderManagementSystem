@@ -57,7 +57,16 @@ Projede, aşağıdaki özellikleri içeren bir MySQL veritabanı kullanılmışt
      ```bash
      docker-compose up --build
      ```
-3. **API Dökümantasyonu:**
+3. **Admin Kullanıcı Bilgisi:**
+   Uygulama ilk kez çalıştırıldığında, `userService` tarafından veritabanına aşağıdaki bilgilerle bir **admin kullanıcı** otomatik olarak eklenir:
+   - **Ad:** admin  
+   - **E-posta:** admin@gmail.com  
+   - **Şifre:** 1234567Ab!  
+   - **Rol:** admin  
+
+   Bu kullanıcıyı API çağrılarında veya testlerde kullanabilirsiniz. 
+
+4. **API Dökümantasyonu:**
    Her bir servis için Swagger arayüzü sunulmaktadır. Aşağıdaki adreslerden ilgili servisin dökümantasyonuna ulaşabilirsiniz:
    
    - **userService:** `http://localhost:8080/api-docs`
